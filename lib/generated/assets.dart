@@ -2,7 +2,6 @@
 class Assets {
   Assets._();
 
-  static const String fontsTest = 'assetss/fonts/test.dart';
   static const String imagesAvatarOne = 'assetss/images/avatar_one.svg';
   static const String imagesAvatarTow = 'assetss/images/avatar_tow.svg';
   static const String imagesBalance = 'assetss/images/balance.svg';
