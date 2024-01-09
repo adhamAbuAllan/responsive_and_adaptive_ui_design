@@ -1,66 +1,66 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 abstract class AppStyles {
-  static TextStyle styleRegular16 = TextStyle(
+  static TextStyle styleRegular16 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF064060),
+    color: Color(0xFF064060),
     fontSize: 16,
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle styleMedium16 = TextStyle(
+  static TextStyle styleMedium16 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF064060),
+    color: Color(0xFF064060),
     fontSize: 16,
     fontWeight: FontWeight.w500,
   );
 
-  static TextStyle styleMedium20 = TextStyle(
+  static TextStyle styleMedium20 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFFFFFFFF),
+    color: Color(0xFFFFFFFF),
     fontSize: 20,
     fontWeight: FontWeight.w500,
   );
-  static TextStyle styleSemiBold16 = TextStyle(
+  static TextStyle styleSemiBold16 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF4EB7F2),
+    color: Color(0xFF4EB7F2),
     fontSize: 16,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle styleBold16 = TextStyle(
+  static TextStyle styleBold16 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF064061),
+    color: Color(0xFF064061),
     fontSize: 16,
     fontWeight: FontWeight.w700,
   );
-  static TextStyle styleSemiBold20 = TextStyle(
+  static TextStyle styleSemiBold20 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF064061),
+    color: Color(0xFF064061),
     fontSize: 20,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle styleSemiBold24 = TextStyle(
+  static TextStyle styleSemiBold24 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF4EB7F2),
+    color: Color(0xFF4EB7F2),
     fontSize: 24,
     fontWeight: FontWeight.w600,
   );
 
-  static TextStyle styleSemiBold18 = TextStyle(
+  static TextStyle styleSemiBold18 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFF4EB7F2),
+    color: Color(0xFF4EB7F2),
     fontSize: 18,
     fontWeight: FontWeight.w600,
   );
-  static TextStyle styleRegular12 = TextStyle(
+  static TextStyle styleRegular12 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFFAAAAAA),
+    color: Color(0xFFAAAAAA),
     fontSize: 12,
     fontWeight: FontWeight.w400,
   );
-  static TextStyle styleRegular14 = TextStyle(
+  static TextStyle styleRegular14 = const TextStyle(
     fontFamily: 'Montserrat',
-    color: const Color(0xFFAAAAAA),
+    color: Color(0xFFAAAAAA),
     fontSize: 14,
     fontWeight: FontWeight.w400,
   );
