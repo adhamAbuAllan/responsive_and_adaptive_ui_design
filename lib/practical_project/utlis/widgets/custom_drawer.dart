@@ -11,7 +11,7 @@ class CustomDrawer extends StatelessWidget {
       color: Colors.white.withOpacity(.7),
       child: const Column(children: [
         UserInfoListTile(
-            image: Assets.imagesAvatarOne, title: "Lekan Okeowo", subtitle: "demo@gmail.com")
+            image: Assets.imagesAvatarThree,title: "Lekan Okeowo", subtitle: "demo@gmail.com")
       ]),
     );
   }
