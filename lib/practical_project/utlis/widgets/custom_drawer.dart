@@ -8,21 +8,42 @@ import 'darwer_items_list_view.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white.withOpacity(.7),
-      child:  const Column(children: [
-        UserInfoListTile(
-            image: Assets.imagesAvatarThree,title: "Lekan Okeowo", subtitle: "demo@gmail.com"),
-        SizedBox(height: 20,),
+      child: const CustomScrollView(slivers: [
+        SliverToBoxAdapter(
+          child: UserInfoListTile(
+              image: Assets.imagesAvatarThree,
+              title: "Lekan Okeowo",
+              subtitle: "demo@gmail.com"),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(
+            height: 20,
+          ),
+        ),
         DrawerItemsListView(),
-        Expanded(child: SizedBox()),
-        InActiveDrawerItem(drawerItemModel: DrawerItemModel(title: 'sittings', image: Assets.imagesSetting)),
-        InActiveDrawerItem(drawerItemModel: DrawerItemModel(title: 'Logout account', image: Assets.imagesLogout)),
-        SizedBox(height: 48,),
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Column(
+            children: [
+              Expanded(child: SizedBox(height: 30,)),
+              InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                      title: 'sittings', image: Assets.imagesSetting)),
+              InActiveDrawerItem(
+                  drawerItemModel: DrawerItemModel(
+                      title: 'Logout account', image: Assets.imagesLogout)),
+              SizedBox(
+                height: 48,
+              ),
+            ],
+          ),
+        ),
       ]),
     );
   }
 }
-

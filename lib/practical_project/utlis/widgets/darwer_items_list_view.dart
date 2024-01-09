@@ -25,9 +25,8 @@ final  List<DrawerItemModel> items = [
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(itemCount: items.length,
+    return SliverList.builder(itemCount: items.length,
 
-      shrinkWrap: true,physics: const NeverScrollableScrollPhysics(),
       itemBuilder: (context, index) {
 
         return Padding(
