@@ -14,8 +14,8 @@ final String title , hint;
           "Custom name",
           style: AppStyles.styleMedium16,
         ),
-        SizedBox(height: 12,),
-        CustomTextField(),
+        const SizedBox(height: 12,),
+        CustomTextField(hint: hint,),
       ],
     );
   }
